@@ -32,8 +32,6 @@ def export_to_json(uid, type, nickname, username, discriminator):
 	with io.open('Exported/Exported.json', 'a', encoding='utf-8') as f:
 		Output.append(friend_dict)
 		return Output
-		#f.write(str(json.dumps(Output, ensure_ascii=False)))
-		#f.write(u'\n')
 
 def sort_friends():
 	friend_data = export_friends()
